@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Aquí tienes un abrazo!</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Carga de la librería GSAP para animaciones -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+
+  <!-- Elementos decorativos (cuerda y cinta) para abrir la carta -->
+  <div id="cordWrapper" class="cord-wrapper"></div>
+  <div id="ribbon" class="ribbon"></div>
+
+  <!-- Tarjeta Principal -->
+  <div class="card">
+    <h2 id="mainText">¡QUIEN QUIERE UN BECHITOOOO! 🤗</h2>
+
+    <!-- Contenedor del Video -->
+    <div class="media-container">
+      <video id="cardVideo" autoplay loop muted playsinline>
+        <source id="videoSource" src="gato_beso.mp4" type="video/mp4">
+        Tu navegador no soporta videos.
+      </video>
+    </div>
+
+    <!-- Contenedor del Botón -->
+    <div id="buttonContainer" class="button-container">
+      <button id="siButton" onclick="onYesClick()">YO</button>
+    </div>
+    
+
+  <!-- Música de fondo (comienza al hacer clic en el botón "Sí") -->
+  <audio id="bgMusic" src="musica.mpeg" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
